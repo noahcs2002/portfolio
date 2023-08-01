@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./projects.css">
+</head>
+<body>
+    <script src="./projects.js"></script>
+
+    <div class="navbar"> 
+
+        <div class="home" onclick="home()"> 
+            <button id= "home" class="full-button"> &#9664 Home </button>
+        </div>
+
+        <div class="contact" onclick="contact()"> 
+            <button id= "projects" class="full-button"> Contact Me </button>
+        </div>
+
+        <div class="education" onclick="education()">
+            <button id="education" class="full-button"> Education </button>
+        </div>
+
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="bordered">
+        <div class="centered-div" id="container">
+            <h1 class="title"> Projects: Current, Past, and Dead </h1>
+        </div>
+
+        <div class="columnar-container">
+            <div class="column-header">
+                <h1 class="title">
+                    In Progress
+                </h1>
+            </div>
+
+            <div class="column-header">
+                <h1 class="title">
+                    Completed
+                </h1>
+            </div>
+
+            <div class="column-header">
+                <h1 class="title">
+                    Scrapped
+                </h1>
+            </div>
+        </div>
+
+        <div class="columnar-container">
+            <script src="./projects.js"></script>
+            <div class="column">
+                <button class="project-button" onclick="site()">
+                    This website
+                </button>
+                
+            </div>
+            <div class="column">
+                <button class="project-button" onclick="mme()">
+                    Manage-Mint Express
+                </button>
+                <button class="project-button" onclick="cnn()">
+                    Convolutional Neural Network
+                </button>
+            </div>
+            <div class="column">
+                <button class="project-button" onclick="linter()">
+                    Code Linter
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

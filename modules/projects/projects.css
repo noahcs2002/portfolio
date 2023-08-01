@@ -1,0 +1,101 @@
+/* * {
+    border: 2px solid red;
+} */
+
+html {
+    background-color: var(--background);
+}
+
+:root {
+    --button : #ffeeeb;
+    --background : #f7efee;
+    --navbar_background : #f4dea9;
+    --font_family : 'Courier New', Courier, monospace;
+}
+
+.centered-div {
+    justify-content: center;
+    justify-items: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    justify-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.p {
+    font-size: 24px;
+}
+
+.info {
+    font-size: 20px;
+}
+
+.bordered {
+    height: 75%;
+    width: 75%;
+    border: black solid 2px;
+    background-color: lavender;
+    margin: 5px auto;
+    padding : 15px;
+    padding-top: 0px;
+}
+
+.spacer {
+    padding-top: 5%;
+}
+
+.navbar {
+    display: flex;
+    width: 33%;
+}
+
+.navbar div {
+    background: var(--navbar_background);
+    height: 30px;
+    flex: 1;
+}
+
+.full-button {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font_family);
+    background-color: var(--button);
+    font-size: small;
+}
+
+.project-button{
+    width: 350px;
+    height: 60px;
+    font-size: 20px;
+    font-family: var(--font_family);
+    background-color: var(--button);
+    margin-bottom: 5px;
+}
+
+.columnar-container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column-header {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+}
