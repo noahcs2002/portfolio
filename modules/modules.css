@@ -106,3 +106,13 @@ td:nth-child(odd), th:nth-child(odd) {
 td:nth-child(2), th:nth-child(2) {
     text-align: center;
 }
+
+.project-info-table {
+    width: 100%; 
+    border: 1px solid black;
+    margin-left: 2px;
+    margin-right: 2px;
+    align-self: flex-start;
+    padding : 5px;
+    margin: 5px;
+}

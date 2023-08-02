@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../modules.css">
+    <link rel="stylesheet" href="./projects.css">
 
 </head>
 <body>
@@ -28,8 +28,115 @@
             <button id="education" class="full-button"> Education </button>
         </div>
 
-
     </div>
 
-    <h1>MME</h1>
+    <div class="spacer"></div>
+
+    <div class="bordered">
+        <div class="centered-div" id="container"> 
+            <h1 class="title"> Manage-Mint Express </h1>    
+        </div>
+
+        <div class="centered-div">
+            <p class="project-info">
+                In the fall of 2022, I took CSC325 - Advanced Object Oriented Programming. This class
+                had an optional project: something big that covered lots of different concepts we had covered in class.
+                The added bonus to the project? No final exam. So, I proposed my project, and got to work on it right away.
+                The project I constructed was unnamed at first, but now is known as <em>Manage-Mint Express</em>. The goal
+                was to, one day, expand upon the <em>Express</em> part and offer the project as more sophisticated service, but that
+                is a long way off.
+            </p>
+
+            <p class="project-info">
+                So what is <em>MME</em>? It is a light-weight fantasy/rookie league/little leage baseball team manager. It came with
+                a mediocre but no-missing-pieces feature set, including all different forms of player statistics management.
+                Pitchers had stats such as ERA, WAR, WHIP, SBA etc, while positon players could track things like put-outs, hitting average,
+                as well as WAR. Eventually, the goal <em>was</em> to add a series of mathematical modeling features, as well as a trading feature,
+                and a <em>"Game Day Mode"</em> to allow managers to trade players and schedule/record games.
+            </p>
+
+            
+            <div class="centered-div" id="container">
+                <h1 class="title"> Highlights</h1>
+            </div>
+
+            <div class="columnar-container">
+                <div class="column" style="margin-bottom: 10px;">
+                    <h1>Custom database scripts</h1>
+                    <p class="project-info">
+                        This project used custom database files to construct (and remove once the user deleted their account) database tables.
+                        The user would create an account if one did not exist which would prompt the custom DB engine to create the tables and
+                        propogate with the necessary information. Then, when the user deleted their account or the team the account was under,
+                        then the DB engine ran a clean-up operation to remove the tables to reduce clutter.
+                    </p>
+                </div>
+                <div class="column" style="margin-bottom: 10px;">
+                    <img src="../../res/mme/sql.png" alt="Image depicting SQL procedures to be ran from the project">
+                </div>
+            </div>
+            <div class="columnar-container">
+                <div class="column" >
+                    <h1>Custom SQL Utility Tool</h1>
+                    <p class="project-info">
+                        The goal with this project was to do as much from scratch as I could, so I wrote a custom tool to 
+                        extract SQL code from a file and create a String representation of it, to serve as a query parameter.
+                    </p>
+                </div>
+                <div class="column">
+                    <img src="../../res/mme/util.png" alt="Code snippet showing the custom SQL utility tool I wrote." width="510px" height="500px">
+                </div>
+            </div>
+            <div class="columnar-container">
+                <div class="column">
+                    <h1>Custom Startup Procedure</h1>
+                    <p class="project-info">
+                        I created a custom start up procedure for this project to run correctly. If the config file had
+                        been written to with team information, then the user was deemed as "set up" and the program would start
+                        right away. If the team information <em>hadn't</em> been written to the config file, then the 
+                        startup information would be prompted for. This basically was a form of serialization before I learned how to
+                        actually use <code>ObjectOutputStream</code> objects and such.
+                    </p>
+                </div>
+                <div class="column">
+                    <img src="../../res/mme/run.png" alt="A picture of the runtime I used" width="510px" height="500px">
+                </div>
+            </div>
+            <div class="columnar-container">
+                <div class="column">
+                    <h1>Database Scaffolding</h1>
+
+                    <p class="project-info">
+                        Commonly, databases need to be scaffolded. This is the process of constructing a database instance in such a way
+                        that, once the database is started up, it comes already pre-equipped with certain tables and filler data, and already
+                        has certain constraints imposed on it. Here I scaffolded the database to make sure that the <code>Teams</code> table was
+                        already made and able to be used by the time the software was meant to be ran.
+                    </p>
+                </div>
+                <div class="column">
+                    <img src="../../res/mme/scaffold.png" alt="DB Scaffolding Code Snippet" height="500px" width="510px">
+                </div>
+            </div>
+        </div>
+
+        <div class="centered-div" id="container">
+            <table class="project-info-table">
+                <tr>
+                    <td><em>Dev-Complete</em></td>
+                    <td>December 2022</td>
+                </tr>
+                <tr>
+                    <td><em>Repo Link</em></td>
+                    <td><a href="https://github.com/noahcs2002/Manage-Mint-Express">https://github.com/noahcs2002/Manage-Mint-Express</a></td>
+                </tr>
+                <tr>
+                    <td><em>Code Author(s)</em></td>
+                    <td>Noah Sternberg</td>
+                </tr>
+                <tr>
+                    <td><em>License</em></td>
+                    <td>None</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </html>
