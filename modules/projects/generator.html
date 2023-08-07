@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./projects.css">
+</head>
+<body>
+    <script src="../nav.js"></script>
+
+    <div class="navbar"> 
+
+        <div class="projects" onclick="projects()">
+            <button id="projects" class="full-button">&#9664 Back to Projects </button>
+        </div>
+
+        <div class="home" onclick="home()"> 
+            <button id= "home" class="full-button">  Home </button>
+        </div>
+
+        <div class="contact" onclick="contact()"> 
+            <button id= "projects" class="full-button"> Contact Me </button>
+        </div>
+
+        <div class="education" onclick="education()">
+            <button id="education" class="full-button"> Education </button>
+        </div>
+
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="bordered">
+        <div class="centered-div" id="container"> 
+            <h1 class="title"> Code Skeleton Generator </h1>    
+        </div>
+
+        <div class="centered-div">
+            <p class="project-info">
+                I absolutely <em>despise</em> creating project skeletons and rough outlines. For one reason or another,
+                I find it infuriating to deal with, and would rather do anything than that. 
+
+                On the flip side of that coin, I <em>love</em> a good command line tool. It seemed to me
+                like those two things were destined to meet, and so I made them meet, and produced a command
+                line tool that generates project outlines and bare-bones projects for me.
+            </p>
+
+            <div class="centered-div" id="container">
+                <h1 class="title"> Highlights</h1>
+            </div>
+
+            
+            <div class="columnar-container">
+                <div class="column" >
+                    <h1>Multiple Project Types</h1>
+                    <p class="project-info">
+                        I am a developer who likes to make a series of different projects. I prefer command line tools and 
+                        API projects, but dabble in Java <em>swing</em> graphics, and I am also a student with fairly regular homework assignments.
+                        That being said, this project allows me to generate project outlines in accordance to the way I do CLI projects, GUI projects, API projects, and homework assignments.
+                    </p>
+                </div>
+                <div class="column centered-image">
+                    <img src="../../res/csg/project-types.png" alt="Command line snippet showing multiple project types" >
+                </div>
+            </div>
+            <div class="columnar-container">
+                <div class="column" style="margin-bottom: 10px;">
+                    <h1>Multiple Language Support</h1>
+                    <p class="project-info">
+                        When considering how I wanted to make this happen, I opted to choose to allow multiple languages to be used
+                        for several of the different product categories. I mainly develop in Java and Python, so I only included those two languages, 
+                        but it would be easy enough to accomodate a new language.
+                    </p>
+                </div>
+                <div class="column centered-image" style="margin-bottom: 10px;">
+                    <img src="../../res/csg/lang.png" alt="Command line snippet showing multiple languages are available.">
+                </div>
+            </div>
+            <div class="columnar-container">
+                <div class="column">
+                    <h1>Quick Start Option</h1>
+                    <p class="project-info">
+                        In my eyes, the best command line tools are easy to use for someone who knows what they are doing,
+                        and just as easy for someone to figure out if they don't know what's going on. In this command line tool,
+                        if the user knows what's going on they have the option of running a <em>quick start</em> command instead of walking through
+                        the command line procedure. For instance, if the user is familiar with the tool, they can run the command 
+                        <code>java ProjectGenerator name="Demo Project" type=cl lang=java </code> to create a java command line project named Demo Project. In the image to the right,
+                        I have the project tied to a script on my Mac.
+                    </p>
+                </div>
+                <div class="column centered-image">
+                    <img src="../../res/csg/quickstart.png" alt="A picture of the quickstart feature">
+                </div>
+            </div>
+        </div>
+
+        <div class="centered-div" id="container">
+            <table class="project-info-table">
+                <tr>
+                    <td><em>Language(s)</em></td>
+                    <td> Java </td>
+                </tr>
+                <tr>
+                    <td><em>Dev-Complete</em></td>
+                    <td>Ongoing</td>
+                </tr>
+                <tr>
+                    <td><em>Repo Link</em></td>
+                    <td>Private</td>
+                </tr>
+                <tr>
+                    <td><em>Code Author(s)</em></td>
+                    <td>Noah Sternberg</td>
+                </tr>
+                <tr>
+                    <td><em>License</em></td>
+                    <td>None</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body> 
+</html>

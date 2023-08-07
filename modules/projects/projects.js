@@ -29,3 +29,7 @@ function education() {
 function contact() {
     window.location.href = "../contact/contactme.html"
 }
+
+function projectGenerator() {
+    window.location.href= "./generator.html"
+}

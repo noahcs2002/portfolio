@@ -95,6 +95,11 @@ html {
     margin-bottom: 10px;
 }
 
+.centered-image {
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
+}
+
 .column-header {
     flex: 50%;
     display: flex;
